@@ -1,0 +1,36 @@
+{
+  "name": "Typeof Brain Code Inject",
+  "description": "Simple Tool to add any javascript file to pages. For development purposes.",
+  "short_name": "TOBCId",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "inject.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "*://*/*",
+    "storage"
+  ],
+  "browser_action": {
+    "default_popup": "options.html"
+  }
+}

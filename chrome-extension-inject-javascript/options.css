@@ -1,0 +1,23 @@
+body {
+  width: 400px;
+  font-family: Arial, sans-serif;
+  padding:10px;
+  font-size: 14px;
+}
+
+.row .input {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background: white;
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: calc(100% - 10px);
+}
+
+.row {
+  padding-bottom: 10px;
+}
+
+.row-template {
+  display: none;
+}
